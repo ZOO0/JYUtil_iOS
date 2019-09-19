@@ -1,5 +1,5 @@
 //
-//  String.swift
+//  StringExtension.swift
 //  JYUtil_iOS
 //
 //  Created by JY on 18/09/2019.

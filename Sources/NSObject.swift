@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSObject {
+public extension NSObject {
     
     /**
      String 유효성 검사
@@ -16,7 +16,7 @@ extension NSObject {
      - parameters:
         - str: 유효성 검사를 할 String
      */
-    func isValidString(str: String?) -> Bool {
+    public func isValidString(str: String?) -> Bool {
         if let trimmedStr = str?.trim() {
             if trimmedStr.count > 0 {
                 return true
@@ -24,5 +24,4 @@ extension NSObject {
         }
         return false
     }
-
 }
