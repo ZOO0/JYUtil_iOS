@@ -36,13 +36,13 @@ public extension String {
     /**
      lastIndexOf
      */
-    func lastIndexOf(target: String) -> Int? {
-        let range = (self as NSString).range(of: target, options: NSString.CompareOptions.backwards)
-        guard range.toRange() != nil else {
-            return nil
-        }
-        return self.count - range.location - 1
-    }
+//    func lastIndexOf(target: String) -> Int? {
+//        let range = (self as NSString).range(of: target, options: NSString.CompareOptions.backwards)
+//        guard range.toRange() != nil else {
+//            return nil
+//        }
+//        return self.count - range.location - 1
+//    }
 
 //MARK: String check
     
