@@ -27,9 +27,8 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
 Common utils for iOS development using Swift.
                    DESC
-
   s.homepage     = "https://github.com/ZOO0/JYUtil_iOS"
-  # s.screenshots  = 
+  # s.screenshots  = ""
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -39,8 +38,7 @@ Common utils for iOS development using Swift.
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT JYUtil_iOS"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -56,7 +54,7 @@ Common utils for iOS development using Swift.
   s.author             = { "Jooyoung Park" => "jythedeveloper@gmail.com" }
   # Or just: s.author    = "Jooyoung Park"
   # s.authors            = { "Jooyoung Park" => "jythedeveloper@gmail.com" }
-  # s.social_media_url   = "http://twitter.com/Jooyoung Park"
+  # s.social_media_url   = ""
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -65,14 +63,15 @@ Common utils for iOS development using Swift.
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+  # s.ios.deployment_target = "9.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
+  s.swift_version = "4.2"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -80,7 +79,7 @@ Common utils for iOS development using Swift.
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/ZOO0/JYUtil_iOS.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ZOO0/JYUtil_iOS.git", :tag => "#{s.version.to_s}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +90,8 @@ Common utils for iOS development using Swift.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Sources", "Sources/*.swift"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Sources/*.swift"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
