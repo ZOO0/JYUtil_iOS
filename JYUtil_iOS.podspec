@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JYUtil_iOS"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Common utils for iOS development (Swift)"
 
   # This description is used to generate tags and improve search results.
