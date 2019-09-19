@@ -16,7 +16,7 @@ public extension NSObject {
      - parameters:
         - str: 유효성 검사를 할 String
      */
-    public func isValidString(str: String?) -> Bool {
+    func isValidString(str: String?) -> Bool {
         if let trimmedStr = str?.trim() {
             if trimmedStr.count > 0 {
                 return true

@@ -7,23 +7,24 @@
 //
 
 import Foundation
+import UIKit
 
 public extension UIView {
     
-    public func hide() {
+    func hide() {
         self.isHidden = true
     }
     
-    public func makeVisible() {
+    func makeVisible() {
         self.isHidden = false
     }
     
-    public func makeBorder() {
+    func makeBorder() {
         self.layer.borderColor = UIColor.black.cgColor
         self.layer.borderWidth = 1
     }
     
-    public func makeRounded() {
+    func makeRounded() {
         self.layer.cornerRadius = self.frame.height / 2
     }
 }

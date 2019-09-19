@@ -15,7 +15,7 @@ public extension String {
     /**
      trim
      */
-    public func trim() -> String {
+    func trim() -> String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
     
@@ -24,7 +24,7 @@ public extension String {
     /**
      indexOf
      */
-    public func indexOf(_ target: String) -> Int {
+    func indexOf(_ target: String) -> Int {
         let range = self.range(of: target)
         if let range = range {
             return distance(from: self.startIndex, to: range.lowerBound)
@@ -36,12 +36,12 @@ public extension String {
     /**
      lastIndexOf
      */
-    public func lastIndexOf(target: String) -> Int? {
+    func lastIndexOf(target: String) -> Int? {
         let range = (self as NSString).range(of: target, options: NSString.CompareOptions.backwards)
         guard range.toRange() != nil else {
             return nil
         }
-        return self.length - range.location - 1
+        return self.count - range.location - 1
     }
 
 //MARK: String check
@@ -51,7 +51,7 @@ public extension String {
      - parameters:
         - s: specific string
      */
-    public func contains(s: String) -> Bool {
+    func contains(s: String) -> Bool {
         return (self.range(of: s) != nil) ? true : false
     }
     
@@ -62,7 +62,7 @@ public extension String {
      - parameters:
         - key: Localizable.strings에 명시된 key
      */
-    public func LocalizedString(_ key: String) -> String {
+    func LocalizedString(_ key: String) -> String {
         return NSLocalizedString(key, comment: "")
     }
 }
