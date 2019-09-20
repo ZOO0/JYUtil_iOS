@@ -19,9 +19,9 @@ public extension UIView {
         self.isHidden = false
     }
     
-    func makeBorder() {
-        self.layer.borderColor = UIColor.black.cgColor
-        self.layer.borderWidth = 1
+    func makeBorder(_ width: CGFloat, _ color: CGColor) {
+        self.layer.borderWidth = width
+        self.layer.borderColor = color
     }
     
     func makeRounded() {
