@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AEFAE6C2334B25C00E911E7 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEFAE6B2334B25C00E911E7 /* Log.swift */; };
 		0AF0679223337743000CA630 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0678E23337743000CA630 /* StringExtension.swift */; };
 		0AF0679323337743000CA630 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0678F23337743000CA630 /* NSObject.swift */; };
 		0AF0679423337743000CA630 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0679023337743000CA630 /* UIViewExtension.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		0A5777322331CC4C00EAEAF8 /* libJYUtil_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJYUtil_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AEFAE6B2334B25C00E911E7 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = SOURCE_ROOT; };
 		0AF0678E23337743000CA630 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Sources/StringExtension.swift; sourceTree = SOURCE_ROOT; };
 		0AF0678F23337743000CA630 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSObject.swift; path = Sources/NSObject.swift; sourceTree = SOURCE_ROOT; };
 		0AF0679023337743000CA630 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Sources/UIViewExtension.swift; sourceTree = SOURCE_ROOT; };
@@ -67,6 +69,7 @@
 				0AF0678F23337743000CA630 /* NSObject.swift */,
 				0AF0678E23337743000CA630 /* StringExtension.swift */,
 				0AF0679023337743000CA630 /* UIViewExtension.swift */,
+				0AEFAE6B2334B25C00E911E7 /* Log.swift */,
 			);
 			path = JYUtil_iOS;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			files = (
 				0AF0679423337743000CA630 /* UIViewExtension.swift in Sources */,
 				0AF0679223337743000CA630 /* StringExtension.swift in Sources */,
+				0AEFAE6C2334B25C00E911E7 /* Log.swift in Sources */,
 				0AF0679323337743000CA630 /* NSObject.swift in Sources */,
 				0AF0679523337743000CA630 /* Definition.swift in Sources */,
 			);
