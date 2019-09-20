@@ -17,7 +17,7 @@ public class Log {
         #endif
     }
     
-    class func warn(_ message: Any, functionName: String = #function) {
+    public class func warn(_ message: Any, functionName: String = #function) {
         #if DEBUG
         let output = "👿\(NSDate()) \(functionName): \(message)"
         print(output)
