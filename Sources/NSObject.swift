@@ -10,6 +10,17 @@ import Foundation
 
 public extension NSObject {
     
+//MARK: Localized String
+    
+    /**
+     Load NSLocalizedString
+     - parameters:
+     - key: Localizable.strings에 명시된 key
+     */
+    func LocalizedString(_ key: String) -> String {
+        return NSLocalizedString(key, comment: "")
+    }
+    
     /**
      String 유효성 검사
      전달받은 String의 nil 여부, 공백제외 1글자 이상인지 여부를 체크

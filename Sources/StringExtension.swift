@@ -54,15 +54,4 @@ public extension String {
     func contains(s: String) -> Bool {
         return (self.range(of: s) != nil) ? true : false
     }
-    
-//MARK: Localized String
-    
-    /**
-     Load NSLocalizedString
-     - parameters:
-        - key: Localizable.strings에 명시된 key
-     */
-    func LocalizedString(_ key: String) -> String {
-        return NSLocalizedString(key, comment: "")
-    }
 }
